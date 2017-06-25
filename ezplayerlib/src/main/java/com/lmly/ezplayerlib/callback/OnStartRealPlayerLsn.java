@@ -5,4 +5,5 @@ package com.lmly.ezplayerlib.callback;
  */
 
 public interface OnStartRealPlayerLsn {
+
 }
