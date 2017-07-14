@@ -9,7 +9,9 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
-
+        ndk {
+            abiFilters "armeabi"
+        }
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
@@ -23,6 +25,9 @@ android {
         main {
             jniLibs.srcDirs = ['src/main/jniLibs']
         }
+    }
+    lintOptions {
+        abortOnError false
     }
 }
 
